@@ -15,37 +15,28 @@ public enum NodeType
 
  
 public class Node: IComparable<Node>
-{
-     
+{  
     public readonly NodeType NodeType = NodeType.Open;
-
      
     public readonly int XIndex = -1;
     public readonly int YIndex = -1;
-
      
     public Vector3 Position;
-
      
     public List<Node> Neighbors = new List<Node>();
-
      
     public float DistanceTraveled = Mathf.Infinity;
-
-     
+    
     public Node Previous = null;
-
      
     public float Priority;
-
-     
+    
     public Node(int xIndex, int yIndex, NodeType nodeType)
     {
         this.XIndex = xIndex;
         this.YIndex = yIndex;
         this.NodeType = nodeType;
     }
-
      
     public int CompareTo(Node other)
     {

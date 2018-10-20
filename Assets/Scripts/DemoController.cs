@@ -11,18 +11,12 @@ public class DemoController : MonoBehaviour
     public Graph Graph;
 
      
-    public Pathfinder Pathfinder;
-
-     
     public int StartX = 0;
     public int StartY = 0;
 
      
     public int GoalX = 15;
     public int GoalY = 1;
-
-     
-    public float TimeStep = 0.1f;
 
     void Start()
     {
@@ -42,12 +36,18 @@ public class DemoController : MonoBehaviour
             }
 
              
-            if (Graph.IsWithinBounds(StartX,StartY) && Graph.IsWithinBounds(GoalX, GoalY) && Pathfinder != null)
+            if (Graph.IsWithinBounds(StartX,StartY) && Graph.IsWithinBounds(GoalX, GoalY))
             {
                 Node startNode = Graph.Nodes[StartX, StartY];
                 Node goalNode = Graph.Nodes[GoalX, GoalY];
-                Pathfinder.Init(Graph, graphView, startNode, goalNode);
-                StartCoroutine(Pathfinder.SearchRoutine(TimeStep));
+                var pathfinder = new Pathfinder();
+
+                var path = pathfinder.FindPath(Graph, startNode, goalNode);
+
+                foreach (var node in path)
+                {
+                    Debug.Log(node.Position);
+                }
             }
         }
     }
