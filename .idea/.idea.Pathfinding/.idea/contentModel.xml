@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Jerry\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Jerry\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Jerry\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_Pathfinding.-1689223857.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Jerry\Desktop\Pathfinding" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Resources" t="Include">
+          <e p="Mapdata" t="Include">
+            <e p="Level1.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="DemoController.cs" t="Include" />
+          <e p="Graph.cs" t="Include" />
+          <e p="GraphView.cs" t="Include" />
+          <e p="MapData.cs" t="Include" />
+          <e p="Node.cs" t="Include" />
+          <e p="NodeView.cs" t="Include" />
+          <e p="Pathfinder.cs" t="Include" />
+          <e p="PriorityQueue.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Pathfinding.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
